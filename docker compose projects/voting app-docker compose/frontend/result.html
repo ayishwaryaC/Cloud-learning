@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voting App Result</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">Voting App</div>
+    <div class="subtitle">Your vote is recorded. See today’s winner.</div>
+  </header>
+
+  <main>
+    <section class="card result-page">
+      <div class="result-banner">
+        <h2 id="choiceTitle">Thank you for voting!</h2>
+        <p id="voteHint" class="info"></p>
+      </div>
+
+      <div id="winner" class="winner-badge"></div>
+      <div id="resultMessage" class="message"></div>
+
+      <div class="card result-summary">
+        <h3>Live counts</h3>
+        <div id="resultTable" class="results"></div>
+      </div>
+
+      <div class="actions">
+        <button id="refreshPage" type="button">Refresh live results</button>
+        <button id="backButton" type="button" class="secondary">Back to vote</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- <footer>
+    <p>Backend API: <span>http://localhost:8000</span></p>
+  </footer> -->
+
+  <script src="result.js"></script>
+</body>
+</html>
