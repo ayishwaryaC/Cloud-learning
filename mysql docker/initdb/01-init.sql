@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(120) NOT NULL UNIQUE
+);
+
+INSERT INTO users (name, email)
+VALUES ('Raj', 'raj@example.com')
+ON DUPLICATE KEY UPDATE name = VALUES(name);
