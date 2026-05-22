@@ -46,7 +46,7 @@ docker compose exec mysql mysql -uappuser -papppass123 appdb -e "SELECT * FROM u
 ```
 
 ## Volumes and Data Persistence
-
+used store our data in volume , if the container is removed/recreated
 In `docker-compose.yml`:
 
 ```yaml
